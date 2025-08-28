@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ramey",
+  lastName: "Robles",
+  name: `Ramey Robles`,
+  role: "Fullstack Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "rameyrobo@gmail.com",
+  location: "US/Pacific", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -98,9 +98,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m Ramey, a Full Stack Developer with a love for building systems that work 
+        as beautifully behind the scenes as they do on the surface. My background spans 
+        custom WordPress plugins, Shopify 2.0 storefronts, and Magento architecture, with a 
+        particular focus on backend problem-solving — databases, APIs, and automation. 
+        At the same time, I enjoy crafting clean, responsive interfaces with React, Next.js, 
+        and Tailwind. I see every project as both an engineering challenge and a chance to make 
+        the web feel seamless, intuitive, and alive.
       </>
     ),
   },
@@ -155,12 +159,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "UCR",
+        description: <>Studied Media and Cultural Studies.</>,
       },
     ],
   },
