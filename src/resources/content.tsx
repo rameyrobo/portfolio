@@ -24,17 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/rameyrobo",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/ramey-robles/",
   },
   {
     name: "Email",
@@ -65,7 +60,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
+      I'm Ramey, a design engineer at{" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
@@ -98,13 +93,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I’m Ramey, a Full Stack Developer with a love for building systems that work 
-        as beautifully behind the scenes as they do on the surface. My background spans 
-        custom WordPress plugins, Shopify 2.0 storefronts, and Magento architecture, with a 
-        particular focus on backend problem-solving — databases, APIs, and automation. 
-        At the same time, I enjoy crafting clean, responsive interfaces with React, Next.js, 
-        and Tailwind. I see every project as both an engineering challenge and a chance to make 
-        the web feel seamless, intuitive, and alive.
+        I’m a full-stack developer who thrives at the intersection of design, technology, and strategy. 
+        From bold front-end interfaces to complex back-end architectures, I build scalable, performance-driven 
+        platforms that help businesses stand out and take control of their digital presence.
       </>
     ),
   },
@@ -156,11 +147,11 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "UCR",
-        description: <>Studied Media and Cultural Studies.</>,
+        name: "University of California Riverside",
+        description: <>Media and Cultural Studies.</>,
       },
     ],
   },

@@ -10,11 +10,11 @@ export const ThemeToggle: React.FC = () => {
 
   useEffect(() => {
     setMounted(true);
-    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "light");
+    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "dark");
   }, []);
 
   useEffect(() => {
-    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "light");
+    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "dark");
   }, [theme]);
 
   const icon = currentTheme === "dark" ? "light" : "dark";
