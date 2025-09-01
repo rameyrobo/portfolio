@@ -14,9 +14,17 @@
     top: var(--static-space-64);
 }
 
+.about_avatar__EGXrs {
+    position: relative;
+}
+
 @media (max-width: breakpoints.$s) {
     .avatar {
         top: auto;
+    }
+
+    .about_avatar__EGXrs {
+        position: sticky;
     }
 
     .textAlign {
