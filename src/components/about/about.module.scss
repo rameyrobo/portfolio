@@ -15,16 +15,17 @@
 }
 
 .about_avatar__EGXrs {
-    position: relative;
+    position: sticky;
 }
 
 @media (max-width: breakpoints.$s) {
     .avatar {
         top: auto;
+        position: relative;
     }
 
     .about_avatar__EGXrs {
-        position: sticky;
+        position: relative;
     }
 
     .textAlign {
