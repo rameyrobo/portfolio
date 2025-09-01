@@ -12,6 +12,7 @@
     position: sticky !important;
     height: fit-content;
     top: var(--static-space-64);
+    padding-top: var(--responsive-space-xl);
 }
 
 @media (max-width: breakpoints.$s) {
