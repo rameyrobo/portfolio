@@ -132,8 +132,20 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/mudderfuger.png",
+            alt: "Mudderfuger landing page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/mudderfuger-1.png",
+            alt: "Mudderfuger store",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/burger-she-wrote.png",
+            alt: "Burger She Wrote mockup",
             width: 16,
             height: 9,
           },
@@ -210,16 +222,16 @@ const about: About = {
         role: "Digital Creative Director",
         achievements: [
            <>
-           Designed and developed SEO-optimized WordPress sites and marketing funnels
+           Designed and developed SEO-optimized WordPress sites and marketing funnels.
            </>,
            <>
-           Managed organic and PPC campaigns, improving visibility and conversions
+           Managed organic and PPC campaigns, improving visibility and conversions.
            </>,
            <>
-           Produced multimedia assets (video, audio, design) to support client campaigns
+           Produced multimedia assets (video, audio, design) to support client campaigns.
            </>,
            <>
-           Delivered training and consultation on content creation, analytics, and automation tools
+           Delivered training and consultation on content creation, analytics, and automation tools.
            </>,
            ],
         images: [
@@ -234,7 +246,7 @@ const about: About = {
     institutions: [
       {
         name: "University of California Riverside",
-        description: <>Media and Cultural Studies.</>,
+        description: <>Media and Cultural Studies</>,
       },
     ],
   },
@@ -243,34 +255,7 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
+        title: "JavaScript, TypeScript, React, Next.js, Node.js",
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
@@ -280,24 +265,85 @@ const about: About = {
             icon: "javascript",
           },
           {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
             name: "Next.js",
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Node.js",
+            icon: "nodejs",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
+
+        ],
+      }, 
+      {
+        title: "WordPress Development (custom plugins, Divi, Elementor, Thrive)",
+        description: (
+          <>WordPress development and custom plugin development since 2010.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "WordPress",
+            icon: "wordpress",
+          },
+          {
+            name: "PHP",
+            icon: "php",
+          },
+          {
+            name: "MySQL",
+            icon: "mysql",
+          },
+          {
+            name: "MariaDB",
+            icon: "mariadb",
+          },
+          {
+            name: "GraphQL",
+            icon: "graphql",
+          },
+          {
+            name: "Elementor",
+            icon: "elementor",
           },
         ],
-      },  
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      }, 
+      {
+        title: "eCommerce Development",
+        description: (
+          <>Years of experience building and optimizing eCommerce platforms.</>
+        ),
+        tags: [
+          {
+            name: "WooCommerce",
+            icon: "woo",
+          },
+          {
+            name: "Shopify",
+            icon: "shopify",
+          },
+          {
+            name: "Magento",
+            icon: "magento",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      }, 
     ],
   },
 };
