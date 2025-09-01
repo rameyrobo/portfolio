@@ -93,9 +93,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I’m a full-stack developer who thrives at the intersection of design, technology, and strategy. 
-        From bold front-end interfaces to complex back-end architectures, I build scalable, performance-driven 
-        platforms that help businesses stand out and take control of their digital presence.
+        Full-stack developer with 12+ years of experience building scalable 
+        applications, specializing in backend systems, JavaScript frameworks, 
+        and WordPress development. Expertise in designing eCommerce ecosystems, 
+        custom plugins, automation workflows, and media-heavy web apps with a focus 
+        on performance, accessibility, and maintainability.
       </>
     ),
   },
@@ -104,17 +106,27 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "The Paper Brain",
+        timeframe: "August 2013 - Present",
+        role: "Primary Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
+            Engineered dynamic media and eCommerce platform featuring immersive video players, upload workflows, and subscription-based product models.
+             </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed scalable JavaScript framework solutions integrating React, Next.js, Tailwind CSS, and Node.js for modular and performant builds.
+             </>,
+          <>
+            Built custom WordPress plugins and backend integrations with MailerLite, Gravity Forms, and WooCommerce.
+             </>,
+          <>
+            Optimized databases, automated cron jobs, and implemented infrastructure monitoring to ensure stability and uptime.
+             </>,
+          <>
+            Delivered performance-first builds with adaptive images, lazy loading, deferred assets, and cross-browser video handling.
+             </>,
+          <>
+            Designed and managed server configurations across diverse hosting environments, ensuring scalability and uptime.
           </>,
         ],
         images: [
@@ -128,23 +140,94 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "DYODE",
+        timeframe: "June 2021 - November 2022",
+        role: "Front-end Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
+            Built Product Detail Pages (PDPs) and Collections Pages leveraging metafields and conditional logic for dynamic merchandising.
+            </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Migrated Shopify 1.0 sites to 2.0, improving site performance and enabling modern features.
+            </>,
+          <>
+            Developed reusable UI components in React for scalable development.
+            </>,
+          <>
+            Collaborated with cross-functional teams to deliver responsive, accessible, and high-performing storefronts.
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/nicks.png",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Brand Buddha",
+        timeframe: "November 2018 - June 2021",
+        role: "Director of Technology",
+        achievements: [
+          <>
+            Led technical direction and managed full project lifecycles for client web platforms.
+          </>,
+          <>
+            Architected and deployed custom WordPress and WooCommerce sites with scalable PHP/MySQL backends.
+          </>,
+          <>
+            Built conversion-focused landing pages and integrated CallRail for call tracking.
+          </>,
+          <>
+            Oversaw roadmap planning, feature prioritization, QA, and deployment pipelines.
+          </>,
+          <>
+            Trained teams on web standards, digital asset management, and security best practices.
+          </>,
+          <>
+            Implemented automation workflows with Zapier and IFTTT for marketing and sales efficiency.
+          </>,
+          <>
+           Integrated Salesforce, Hubspot, and Zapier for client automation workflows and lead generation.
+           </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "All In Orbit",
+        timeframe: "August 2011 - August 2013",
+        role: "Digital Creative Director",
+        achievements: [
+           <>
+           Designed and developed SEO-optimized WordPress sites and marketing funnels
+           </>,
+           <>
+           Managed organic and PPC campaigns, improving visibility and conversions
+           </>,
+           <>
+           Produced multimedia assets (video, audio, design) to support client campaigns
+           </>,
+           <>
+           Delivered training and consultation on content creation, analytics, and automation tools
+           </>,
+           ],
+        images: [
+        ],
       },
     ],
   },
+  
   studies: {
     display: true, // set to false to hide this section
     title: "Education",
