@@ -1,6 +1,10 @@
 import { IconType } from "react-icons";
 
 import {
+  BsPlugin,
+} from "react-icons/bs";
+
+import {
   HiArrowUpRight,
   HiOutlineLink,
   HiArrowTopRightOnSquare,
@@ -20,6 +24,7 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiShieldStar,
 } from "react-icons/pi";
 
 import {
@@ -28,6 +33,8 @@ import {
   SiElementor,
   SiFigma,
   SiGraphql,
+  SiHubspot,
+  SiIfttt,
   SiMagento,
   SiMysql,
   SiMariadb,
@@ -37,6 +44,7 @@ import {
   SiSupabase,
   SiTypescript,
   SiWoo,
+  SiZapier,
 } from "react-icons/si";
 
 
@@ -47,8 +55,14 @@ import {
   FaX, 
   FaThreads,
   FaNodeJs,
+  FaSalesforce,
+  FaVuejs,
   FaWordpress,
  } from "react-icons/fa6";
+
+import {
+  TbHexagonLetterS
+} from "react-icons/tb";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -83,11 +97,19 @@ export const iconLibrary: Record<string, IconType> = {
   mariadb: SiMariadb,
   graphql: SiGraphql,
   wordpress: FaWordpress,
+  plugin: BsPlugin,
   elementor: SiElementor,
+  divi: PiShieldStar,
   nodejs: FaNodeJs,
+  vue: FaVuejs,
   magento: SiMagento,
   shopify: SiShopify,
+  snipcart: TbHexagonLetterS,
   woo: SiWoo,
+  zapier: SiZapier,
+  ifttt: SiIfttt,
+  hubspot: SiHubspot,
+  salesforce: FaSalesforce,
 };
 
 export type IconLibrary = typeof iconLibrary;

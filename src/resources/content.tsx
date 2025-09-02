@@ -255,7 +255,7 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "JavaScript, TypeScript, React, Next.js, Node.js",
+        title: "JavaScript Development",
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
@@ -277,6 +277,10 @@ const about: About = {
             icon: "nextjs",
           },
           {
+            name: "Vue.js",
+            icon: "vue"
+          },
+          {
             name: "Node.js",
             icon: "nodejs",
           },
@@ -287,7 +291,7 @@ const about: About = {
         ],
       }, 
       {
-        title: "WordPress Development (custom plugins, Divi, Elementor, Thrive)",
+        title: "WordPress Development",
         description: (
           <>WordPress development and custom plugin development since 2010.</>
         ),
@@ -313,8 +317,16 @@ const about: About = {
             icon: "graphql",
           },
           {
+            name: "Divi",
+            icon: "divi",
+          },
+          {
             name: "Elementor",
             icon: "elementor",
+          },
+          {
+            name: "WP Plugins",
+            icon: "plugin"
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -324,20 +336,62 @@ const about: About = {
       {
         title: "eCommerce Development",
         description: (
-          <>Years of experience building and optimizing eCommerce platforms.</>
+          <>Years of experience building eCommerce platforms on any category of web hosting.</>
         ),
         tags: [
           {
-            name: "WooCommerce",
-            icon: "woo",
+            name: "Snipcart",
+            icon: "snipcart",
           },
           {
             name: "Shopify",
             icon: "shopify",
           },
           {
+            name: "WooCommerce",
+            icon: "woo",
+          },
+          {
             name: "Magento",
             icon: "magento",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      }, 
+      {
+        title: "Automation Tools",
+        description: (
+          <>Making client's lives easier.</>
+        ),
+        tags: [
+          {
+            name: "Zapier",
+            icon: "zapier",
+          },
+          {
+            name: "IFTTT",
+            icon: "ifttt",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      }, 
+      {
+        title: "CRM & Marketing Platforms",
+        description: (
+          <>Integrating CRM and marketing platforms for seamless workflows.</>
+        ),
+        tags: [
+          {
+            name: "HubSpot",
+            icon: "hubspot",
+          },
+          {
+            name: "Salesforce",
+            icon: "salesforce",
           },
         ],
         // optional: leave the array empty if you don't want to display images
