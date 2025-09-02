@@ -60,14 +60,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Ramey, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Ramey, a web developer based in Los Angeles, CA.
+<br /> I design and build intuitive user experiences — and create side projects after hours.
     </>
   ),
 };
