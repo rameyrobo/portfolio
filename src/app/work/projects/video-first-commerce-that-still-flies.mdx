@@ -32,6 +32,8 @@ Create a cinematic, media‑dense experience—hero videos, autoplaying grids, a
 
 ## Experience design
 
+![Mudderfuger Snipcart Store](/images/projects/mudderfuger/mudderfuger-store.png "Mudderfuger Snipcart Design")
+
 - **Immersive video grid:** Autoplay/mute logic that responds to viewport visibility using **IntersectionObserver** with sensible thresholds; **ESC** closes modals and videos universally.
 - **Hero & gallery:** Dynamic poster selection, responsive `Image` sizing, and fallbacks (H.264 MP4/WebM/JPG) for stubborn browsers.
 - **Product exploration:** Deep‑linked **product modals** (PDPs) with history navigation (back/forward) so users never lose their place.
@@ -49,17 +51,18 @@ This sequence **prevents drive‑by uploads**, keeps storage clean, and aligns c
 
 ## Performance strategy
 
+![Mudderfuger Page Speed](/images/projects/mudderfuger/mudderfuger-pagespeed.png "Mudderfuger PageSpeed Insights Results")
+
 - **Lazy‑everything:** Defer Snipcart JS/CSS, modal code‑splitting, and metadata‑only video preloads.
 - **Adaptive media:** Dynamic poster sizes, `sizes` on images, JPG fallbacks; H.264 vs WebM preference toggled per browser.
 - **Viewport control:** Pauses any playing video when it leaves the viewport; defers thumbnail generation until idle.
-- **Lightweight UI:** Tailwind utilities with **reusable components** and minimal runtime overhead; Turbopack for faster local iterations.
+- **Lightweight UI:** Tailwind utilities with **reusable components** and minimal runtime overhead
 
 ## Engineering highlights
 
-- **Deep linking** for product modals so each PDP has a shareable URL.
 - **Upload‑aware router** that only enables media submissions **after** verified payment.
 - **Custom product fields** flowing from UI → cart → order metadata.
-- **Password‑protected promo** instance (hush‑hush) for pre‑launch screening.
+- **Password‑protected promo** subdomain instance for promotional stakeholder screening.
 - **Global keyboard UX** (ESC to close modals/videos) and pointer‑/focus‑friendly controls.
 - **Accessibility pass** (labels, focus order, color contrast), plus mobile‑first tap targets.
 
@@ -79,7 +82,6 @@ This sequence **prevents drive‑by uploads**, keeps storage clean, and aligns c
 ## Notes from the trenches
 
 - Safari and IG webviews required **poster/thumbnail pragmatism**—I implemented explicit JPG fallbacks and preload hints to avoid blank videos.
-- Migrated from `order.completed` to **`cart.confirmed`** events to ensure the upload UI only appears after a successful purchase.
 - Built **static product index** pages to help Snipcart crawl and validate all items.
 - Implemented **modal routing** and history management to keep users oriented while exploring.
 

@@ -44,7 +44,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Turning concepts into code, one project at a time</>,
   featured: {
     display: true,
     title: (
@@ -56,12 +56,12 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/video-first-commerce-that-still-flies",
   },
   subline: (
     <>
       I'm Ramey, a web developer based in Los Angeles, CA.
-<br /> I design and build intuitive user experiences — and create side projects after hours.
+<br /> I craft digital experiences for clients <br />and experiment with my own projects after hours.
     </>
   ),
 };
