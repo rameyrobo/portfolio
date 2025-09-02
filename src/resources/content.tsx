@@ -132,14 +132,14 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/mudderfuger.png",
+            src: "/images/projects/mudderfuger/mudderfuger-landing.png",
             alt: "Mudderfuger landing page",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/mudderfuger-1.png",
-            alt: "Mudderfuger store",
+            src: "/images/projects/mudderfuger/mudderfuger-pagespeed.png",
+            alt: "Mudderfuger pagespeed",
             width: 16,
             height: 9,
           },

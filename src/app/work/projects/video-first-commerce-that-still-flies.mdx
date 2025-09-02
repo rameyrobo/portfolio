@@ -1,0 +1,88 @@
+---
+title: "Video first commerce that still flies"
+publishedAt: "2025-08-29"
+summary: "A media‑heavy Next.js build that streams fast, sells smart, and turns uploads into orders—without sacrificing design."
+images:
+  - "/images/projects/mudderfuger/mudderfuger-landing.png"
+  - "/images/projects/mudderfuger/mudderfuger-pagespeed.png"
+  - "/images/projects/mudderfuger/mudderfuger-store.png"
+team:
+  - name: "Ramey Robles"
+    role: "Full‑stack developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/ramey-robles/"
+---
+
+## Overview
+
+A case study of building a **design‑forward, video‑heavy** site that **stays fast**, integrates **ecommerce with gated uploads**, and drives **high session engagement** with modern UX patterns.
+
+## The challenge
+
+Create a cinematic, media‑dense experience—hero videos, autoplaying grids, and full‑screen modals—**without** crushing performance. Pair that with a **storefront that accepts customer uploads** (songs, images/video), but only **after purchase** to prevent spam, while keeping the UI delightful and accessible across browsers (including Safari/IG webviews).
+
+## Solution overview
+
+- **Framework:** Next.js (App Router) + React + TypeScript + Tailwind.
+- **Commerce:** Snipcart for cart/checkout, with **custom product options**, **stackable add‑ons**, **subscriptions**, and **post‑purchase upload**.
+- **Media pipeline:** Video and image assets delivered via **Bunny.net CDN**; responsive poster/thumbnail system with dynamic sizes.
+- **Emails & analytics:** **Resend** for transactional emails (order/upload confirmations), **GA4** and **Vercel Analytics** for behavior and performance insights.
+- **Hosting:** Vercel, with **Edge** components where helpful.
+
+
+## Experience design
+
+- **Immersive video grid:** Autoplay/mute logic that responds to viewport visibility using **IntersectionObserver** with sensible thresholds; **ESC** closes modals and videos universally.
+- **Hero & gallery:** Dynamic poster selection, responsive `Image` sizing, and fallbacks (H.264 MP4/WebM/JPG) for stubborn browsers.
+- **Product exploration:** Deep‑linked **product modals** (PDPs) with history navigation (back/forward) so users never lose their place.
+- **Carousels & showcases:** "Add yourself" character carousel, commercial reels, and context‑aware video sections.
+
+## Commerce & uploads (anti‑spam by design)
+
+1. User configures a product (custom fields, quantity, optional add‑ons).
+2. Checkout completes in Snipcart (**client‑side hooks** wired to `cart.confirmed`).
+3. The site **unlocks the upload flow** and provides a **unique upload link**.
+4. Uploads are persisted to **Bunny.net storage** and associated with the order.
+5. **Resend** emails the customer a confirmation + secure download link.
+
+This sequence **prevents drive‑by uploads**, keeps storage clean, and aligns costs with revenue.
+
+## Performance strategy
+
+- **Lazy‑everything:** Defer Snipcart JS/CSS, modal code‑splitting, and metadata‑only video preloads.
+- **Adaptive media:** Dynamic poster sizes, `sizes` on images, JPG fallbacks; H.264 vs WebM preference toggled per browser.
+- **Viewport control:** Pauses any playing video when it leaves the viewport; defers thumbnail generation until idle.
+- **Lightweight UI:** Tailwind utilities with **reusable components** and minimal runtime overhead; Turbopack for faster local iterations.
+
+## Engineering highlights
+
+- **Deep linking** for product modals so each PDP has a shareable URL.
+- **Upload‑aware router** that only enables media submissions **after** verified payment.
+- **Custom product fields** flowing from UI → cart → order metadata.
+- **Password‑protected promo** instance (hush‑hush) for pre‑launch screening.
+- **Global keyboard UX** (ESC to close modals/videos) and pointer‑/focus‑friendly controls.
+- **Accessibility pass** (labels, focus order, color contrast), plus mobile‑first tap targets.
+
+## What I shipped
+
+- Video grid with **autoplay/mute**, **scroll‑pause**, and **JPG poster fallbacks**.
+- **Responsive media system** (thumbnails, posters, webp/jpg/mp4/webm) with browser‑specific preferences.
+- Snipcart install with **custom styles**, **line‑item options**, and **subscription products**.
+- **Upload pipeline**: post‑purchase gating → upload form → Bunny.net storage → confirmation email via Resend.
+- Analytics: **GA4** (deferred) + **Vercel Analytics**.
+- **Static product index** for cart validation and discoverability.
+
+## Stack
+
+**Next.js**, **React**, **TypeScript**, **Tailwind CSS**, **Snipcart**, **Bunny.net (CDN + storage)**, **Resend**, **Vercel (Edge + analytics)**, **GA4**.
+
+## Notes from the trenches
+
+- Safari and IG webviews required **poster/thumbnail pragmatism**—I implemented explicit JPG fallbacks and preload hints to avoid blank videos.
+- Migrated from `order.completed` to **`cart.confirmed`** events to ensure the upload UI only appears after a successful purchase.
+- Built **static product index** pages to help Snipcart crawl and validate all items.
+- Implemented **modal routing** and history management to keep users oriented while exploring.
+
+## Outcome
+
+A **cinematic storefront** that **loads quickly**, **behaves predictably** across browsers, and **channels creativity into conversion**. The result is a modern experience that treats media as a first‑class citizen **without** sacrificing speed or purchase flow integrity.
