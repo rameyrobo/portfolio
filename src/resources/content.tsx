@@ -138,7 +138,7 @@ const about: About = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/burger-she-wrote.png",
+            src: "/images/projects/burgershewrote/burger-she-wrote.png",
             alt: "Burger She Wrote mockup",
             width: 16,
             height: 9,
@@ -201,13 +201,6 @@ const about: About = {
            </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
