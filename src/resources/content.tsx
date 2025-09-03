@@ -194,7 +194,7 @@ const about: About = {
             Implemented automation workflows with Zapier and IFTTT for marketing and sales efficiency.
           </>,
           <>
-           Integrated Salesforce, Hubspot, and Zapier for client automation workflows and lead generation.
+           Integrated Salesforce and Hubspot for client automation workflows and lead generation.
            </>,
         ],
         images: [
