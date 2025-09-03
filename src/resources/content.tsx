@@ -80,7 +80,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/ramey-robles-w0higq",
   },
   intro: {
     display: true,
@@ -183,9 +183,6 @@ const about: About = {
           </>,
           <>
             Architected and deployed custom WordPress and WooCommerce sites with scalable PHP/MySQL backends.
-          </>,
-          <>
-            Built conversion-focused landing pages and integrated CallRail for call tracking.
           </>,
           <>
             Oversaw roadmap planning, feature prioritization, QA, and deployment pipelines.
