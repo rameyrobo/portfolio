@@ -50,7 +50,7 @@ const home: Home = {
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">
-          <Icon name="allSeeingEye" size={30} style={{ fontSize: 30, width: 30, height: 30 }} />
+          <Icon name="allSeeingEye" style={{ fontSize: 32, width: 32, height: 32 }} />
         </strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
