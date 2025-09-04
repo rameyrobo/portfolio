@@ -1,5 +1,5 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Logo, Row, Text } from "@once-ui-system/core";
+import { Line, Logo, Row, Text, Icon } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Ramey",
@@ -49,7 +49,9 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">
+          <Icon name="allSeeingEye" size={30} style={{ fontSize: 30, width: 30, height: 30 }} />
+        </strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work

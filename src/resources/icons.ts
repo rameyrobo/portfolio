@@ -49,7 +49,8 @@ import {
 
 
 import { 
-  FaDiscord, 
+  FaDiscord,
+  FaEye, 
   FaGithub, 
   FaLinkedin, 
   FaX, 
@@ -65,6 +66,10 @@ import {
   TbCircleLetterAFilled,
 } from "react-icons/tb";
 
+import {
+  GiAllSeeingEye,
+} from "react-icons/gi";
+
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
@@ -74,11 +79,12 @@ export const iconLibrary: Record<string, IconType> = {
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
   openLink: HiOutlineLink,
+  eye: FaEye,
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,
   discord: FaDiscord,
-  eye: HiOutlineEye,
+  allSeeingEye: GiAllSeeingEye,
   eyeOff: HiOutlineEyeSlash,
   supabase: SiSupabase,
   figma: SiFigma,
