@@ -61,7 +61,8 @@ import {
  } from "react-icons/fa6";
 
 import {
-  TbHexagonLetterS
+  TbHexagonLetterS,
+  TbCircleLetterAFilled,
 } from "react-icons/tb";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -106,6 +107,7 @@ export const iconLibrary: Record<string, IconType> = {
   shopify: SiShopify,
   snipcart: TbHexagonLetterS,
   woo: SiWoo,
+  acf: TbCircleLetterAFilled,
   zapier: SiZapier,
   ifttt: SiIfttt,
   hubspot: SiHubspot,

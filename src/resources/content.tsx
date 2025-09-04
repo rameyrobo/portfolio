@@ -312,6 +312,10 @@ const about: About = {
             name: "WP Plugins",
             icon: "plugin"
           },
+          {
+            name: "ACF",
+            icon: "acf"
+          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
