@@ -50,6 +50,7 @@ import {
 
 import { 
   FaDiscord,
+  FaRegEye,
   FaEye, 
   FaGithub, 
   FaLinkedin, 
@@ -79,7 +80,7 @@ export const iconLibrary: Record<string, IconType> = {
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
   openLink: HiOutlineLink,
-  eye: FaEye,
+  eye: FaRegEye,
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,

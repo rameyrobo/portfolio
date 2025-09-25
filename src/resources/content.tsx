@@ -49,8 +49,8 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">
-          <Icon name="allSeeingEye" style={{ fontSize: 32, width: 32, height: 32 }} />
+        <strong className="ml-4 mt-4">
+          <Icon name="eye" style={{ fontSize: 16, width: 16, height: 16 }} />
         </strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
